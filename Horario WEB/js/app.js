@@ -20,6 +20,7 @@
   // seleccion: { [codigoMateria]: nombreGrupo }
   let selection = {};
   try { selection = JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) {}
+  let isPrinting = false;
   // descarta selecciones que ya no existen en los datos
   for (const code of Object.keys(selection)) {
     const c = DATA.courses.find(c => c.code === code);
@@ -237,7 +238,7 @@
     const maxEnd = Math.max(...sessions.map(s => s.endMin));
     const minHour = Math.max(START_H, Math.floor(minStart / 60));
     const maxHour = Math.min(END_H, Math.max(Math.ceil(maxEnd / 60), minHour + 1));
-    const hourH = 56;
+    const hourH = isPrinting ? 38 : 56;
     const totalH = (maxHour - minHour) * hourH;
 
     let html = '<div class="cal-corner"></div>';
@@ -464,6 +465,14 @@
   searchEl.addEventListener('input', renderList);
   if (themeBtn) themeBtn.onclick = toggleTheme;
   applyTheme(loadTheme());
+  window.addEventListener('beforeprint', () => {
+    isPrinting = true;
+    renderCalendar();
+  });
+  window.addEventListener('afterprint', () => {
+    isPrinting = false;
+    renderCalendar();
+  });
   document.getElementById('btnPrint').onclick = () => window.print();
   document.getElementById('btnClear').onclick = () => {
     if (!Object.keys(selection).length) return;

@@ -470,12 +470,14 @@ body.dark-mode .planner-card, body.dark-mode .planner-field select { background:
 @media (max-width: 760px) { .planner-modal { padding: 10px; }.planner-body { grid-template-columns: 1fr; }.planner-courses { border-right: 0; border-bottom: 1px solid var(--border); }.planner-options, .planner-courses, .planner-head, .planner-results { padding-left: 16px; padding-right: 16px; } #plannerCourseList { grid-template-columns: 1fr; max-height: 250px; }.planner-results-head { display: block; }.planner-result { align-items: flex-start; } }
 
 /* ---------- Impresión ---------- */
-@page { size: landscape; margin: 1.2cm; }
+@page { size: landscape; margin: 0.65cm; }
 @media print {
-  html, body { background: #fff; color: #111; }
-  body { overflow: visible; margin: 0; }
+  html, body { height: auto !important; background: #fff; color: #111; }
+  body { display: block; overflow: visible; margin: 0; }
   aside, header, .no-print, #conflictBar, .course-legend, .planner-modal { display: none !important; }
-  .print-header { display: block; }
+  /* El PDF queda centrado en el horario; se omite el título y resumen repetidos. */
+  .print-header { display: none !important; }
+  main { display: block; flex: none; min-height: 0; margin: 0; }
   #calWrap { overflow: visible; padding: 0; }
   #calendar {
     min-width: auto !important;
@@ -502,17 +504,14 @@ body.dark-mode .planner-card, body.dark-mode .planner-field select { background:
     color: #111;
     border: 1px solid rgba(15, 23, 42, 0.12);
     background: var(--block-color) !important;
-    padding: 10px 8px;
-    font-size: 10.5pt;
+    min-height: 0;
+    padding: 5px 6px;
+    font-size: 8.5pt;
     line-height: 1.2;
   }
-  .block .bname { font-size: 9pt; margin-bottom: 4px; }
-  .block .btitle { font-size: 10pt; margin-bottom: 4px; }
-  .block .broom { font-size: 8.8pt; opacity: .85; margin-top: 0; }
+  .block .bname { font-size: 7.5pt; margin-bottom: 2px; }
+  .block .btitle { font-size: 8pt; margin-bottom: 2px; }
+  .block .broom { font-size: 7pt; opacity: .85; margin-top: 0; }
   .block .btime { display: none; }
-  .print-header { background: transparent; border: none; padding: 0 0 12px; }
- .print-header .title { font-size: 22px; letter-spacing: 0.02em; }
-  .print-header .meta { font-size: 11pt; }
- .print-header { padding-bottom: 10px; border-bottom: 1px solid rgba(148, 163, 184, 0.35); }
- #calWrap { page-break-inside: avoid; }
+  #calWrap { page-break-inside: auto; }
 }
