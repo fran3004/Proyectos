@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi Horario · Ing. de Sistemas 2026-2</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Mi Horario</h1>
+    <div class="sub" id="subTitle"></div>
+  </div>
+  <div class="header-actions">
+    <div class="stats no-print" id="stats"></div>
+    <div class="button-group">
+      <button class="primary no-print" id="btnPlanner">Buscar horarios</button>
+      <button class="no-print danger-btn" id="btnClear">Limpiar todo</button>
+      <button class="no-print" id="btnTheme">Modo oscuro</button>
+      <button class="primary no-print" id="btnPrint">Imprimir / PDF</button>
+    </div>
+  </div>
+</header>
+
+<div class="print-header">
+ <div class="title">Horario</div>
+ <div class="meta" id="printMeta"></div>
+</div>
+
+<div id="conflictBar"></div>
+
+<main>
+  <aside class="no-print">
+    <div class="search-box">
+      <input id="search" type="text" placeholder="Buscar materia o código..." autocomplete="off">
+    </div>
+    <div id="courseList"></div>
+  </aside>
+
+  <div id="calWrap">
+    <div id="emptyMsg">
+      Selecciona una materia en el panel de la izquierda y elige un grupo.<br>
+      El horario se arma aquí automáticamente y te avisa si hay choques.
+    </div>
+    <div id="calendar" style="display:none"></div>
+    <div id="courseLegend" class="course-legend no-print"></div>
+  </div>
+</main>
+
+<script src="js/horarios.js"></script>
+<script src="js/horarios_2.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
+
