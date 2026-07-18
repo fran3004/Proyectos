@@ -33,11 +33,6 @@
     const header = document.querySelector('header');
     const select = document.createElement('select');
     select.id = 'programSelect';
-    select.style.marginLeft = '12px';
-    select.style.padding = '6px 10px';
-    select.style.borderRadius = '8px';
-    select.style.border = '1px solid var(--border)';
-    select.style.font = 'inherit';
     DATASETS.forEach((d, i) => {
       const opt = document.createElement('option');
       opt.value = String(i);
