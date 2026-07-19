@@ -157,6 +157,14 @@ body.dark-mode header select {
   background-size: 6px 6px;
   background-repeat: no-repeat;
 }
+body.dark-mode #programSelect {
+  background-color: #0f172c;
+  color: var(--text);
+  background-image: linear-gradient(45deg, transparent 50%, #e2e8f0 50%), linear-gradient(135deg, #e2e8f0 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
 body.dark-mode header select option {
   background: #0f172c;
   color: var(--text);
