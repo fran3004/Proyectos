@@ -331,7 +331,7 @@
   plannerEl.className = 'planner-modal no-print';
   plannerEl.innerHTML = `
     <div class="planner-card" role="dialog" aria-modal="true" aria-labelledby="plannerTitle">
-      <div class="planner-head"><div><h2 id="plannerTitle">Buscar horarios compatibles</h2><p>Elige materias y prioridades. Solo se proponen combinaciones sin choques.</p></div><button class="planner-close" type="button" aria-label="Cerrar">×</button></div>
+      <div class="planner-head"><div><h2 id="plannerTitle">Buscar horarios compatibles</h2><p>Elige materias y define tus condiciones. Solo se proponen combinaciones sin choques.</p></div><button class="planner-close" type="button" aria-label="Cerrar">×</button></div>
       <div class="planner-body">
         <section class="planner-courses"><div class="planner-section-title"><b>Materias</b><span id="plannerCount"></span></div><input id="plannerSearch" type="search" placeholder="Filtrar por nombre o código"><div id="plannerCourseList"></div></section>
         <section class="planner-options">
@@ -341,15 +341,9 @@
           <label class="planner-field">Máximo de materias por día <select id="maxCoursesDay"><option value="0">Sin límite</option><option value="1">1 materia</option><option value="2">2 materias</option><option value="3">3 materias</option><option value="4">4 materias</option><option value="5">5 materias</option></select></label>
           <label class="planner-check"><input id="prefKnown" type="checkbox" checked> Excluir grupos sin horario publicado</label>
           <div class="planner-option-group planner-blocks"><div class="planner-label-row"><span class="planner-label">Bloques que debes tener libres</span><span>opcional</span></div><div class="planner-block-form"><select id="blockDay"><option value="-1">Todos los días</option><option value="0">Lunes</option><option value="1">Martes</option><option value="2">Miércoles</option><option value="3">Jueves</option><option value="4">Viernes</option><option value="5">Sábado</option><option value="6">Domingo</option></select><select id="blockStart"></select><select id="blockEnd"></select><button id="addBlock" type="button">Añadir</button></div><div class="planner-block-list" id="plannerBlockList" aria-live="polite"></div></div>
-          <div class="planner-section-title preference-title"><b>Cómo ordenar las opciones</b><span>opcional</span></div>
-          <label class="planner-field">Menos días de clase <select id="weightDays"></select></label>
-          <label class="planner-field">Menos tiempo muerto <select id="weightGaps"></select></label>
-          <label class="planner-field">Evitar madrugar <select id="weightEarly"></select></label>
-          <label class="planner-field">Evitar terminar tarde <select id="weightLate"></select></label>
-          <label class="planner-field">Jornadas más cortas <select id="weightSpan"></select></label>
           <label class="planner-field planner-results-limit">Alternativas a mostrar <select id="resultLimit"><option value="5">5</option><option value="10" selected>10</option><option value="20">20</option></select></label>
           <button class="primary planner-run" id="plannerRun" type="button">Generar alternativas</button>
-          <p class="planner-note">La búsqueda se limita para mantener la app rápida; las opciones se ordenan por tus prioridades.</p>
+          <p class="planner-note">La búsqueda se limita para mantener la app rápida.</p>
         </section>
       </div>
       <div id="plannerResults" class="planner-results"></div>
@@ -367,14 +361,16 @@
   hourOptions('prefEnd', 14, 22, 22);
   hourOptions('blockStart', 6, 21, 12);
   hourOptions('blockEnd', 7, 22, 14);
-  ['weightDays', 'weightGaps', 'weightEarly', 'weightLate', 'weightSpan'].forEach(id => {
-    const el = document.getElementById(id);
-    ['Indiferente', 'Baja', 'Media', 'Alta'].forEach((name, value) => el.add(new Option(name, value, false, value === 2 && (id === 'weightDays' || id === 'weightGaps'))));
-  });
-
-  function renderPlannerCourses() {
+  function renderPlannerCourses(openGroupCourse) {
     const q = document.getElementById('plannerSearch').value.trim().toLowerCase();
     plannerCourseList.innerHTML = '';
+    const columns = [0, 1].map(() => {
+      const column = document.createElement('div');
+      column.className = 'planner-course-column';
+      plannerCourseList.appendChild(column);
+      return column;
+    });
+    let visibleIndex = 0;
     for (const c of DATA.courses) {
       if (q && !c.code.toLowerCase().includes(q) && !c.name.toLowerCase().includes(q)) continue;
       const label = document.createElement('article');
@@ -394,7 +390,7 @@
       const groups = document.createElement('small'); groups.textContent = `${c.groups.length} grupos`;
       label.append(input, text, groups);
       if (plannerState.chosen.has(c.code)) {
-        const details = document.createElement('details'); details.className = 'planner-group-picker';
+        const details = document.createElement('details'); details.className = 'planner-group-picker'; details.open = openGroupCourse === c.code;
         const selectedGroups = plannerState.groupPreferences.get(c.code);
         const summary = document.createElement('summary');
         summary.innerHTML = `Elegir grupos <em>${selectedGroups ? `${selectedGroups.size} seleccionados` : 'todos'}</em>`;
@@ -408,13 +404,13 @@
             groupInput.checked ? allowed.add(group.name) : allowed.delete(group.name);
             if (allowed.size === c.groups.length) plannerState.groupPreferences.delete(c.code);
             else plannerState.groupPreferences.set(c.code, allowed);
-            renderPlannerCourses();
+            renderPlannerCourses(c.code);
           };
           choice.append(groupInput, groupText); choices.appendChild(choice);
         });
         details.append(summary, choices); label.appendChild(details);
       }
-      plannerCourseList.appendChild(label);
+      columns[visibleIndex++ % columns.length].appendChild(label);
     }
     plannerCount.textContent = `${plannerState.chosen.size} seleccionadas`;
   }
@@ -428,8 +424,7 @@
   function plannerPreferences() {
     const n = id => Number(document.getElementById(id).value);
     const allowedDays = [...document.querySelectorAll('#plannerDays input:checked')].map(input => Number(input.dataset.day));
-    return { start: n('prefStart'), end: n('prefEnd'), allowedDays, maxCourses: n('maxCoursesDay'), known: document.getElementById('prefKnown').checked, blocked: plannerState.blocked,
-      days: n('weightDays'), gaps: n('weightGaps'), early: n('weightEarly'), late: n('weightLate'), span: n('weightSpan'), limit: n('resultLimit') };
+    return { start: n('prefStart'), end: n('prefEnd'), allowedDays, maxCourses: n('maxCoursesDay'), known: document.getElementById('prefKnown').checked, blocked: plannerState.blocked, limit: n('resultLimit') };
   }
   function groupAllowed(group, pref) {
     if (pref.known && !group.sessions.length) return false;
@@ -448,19 +443,18 @@
     groups.forEach(({ code, group }) => group.sessions.forEach(s => coursesPerDay[s.dayIdx].add(code)));
     return coursesPerDay.every(courses => courses.size <= pref.maxCourses);
   }
-  function scoreSchedule(groups, pref) {
+  function scheduleMetrics(groups) {
     const perDay = Array.from({ length: 7 }, () => []);
     groups.forEach(({ group }) => group.sessions.forEach(s => perDay[s.dayIdx].push(s)));
-    let usedDays = 0, gaps = 0, early = 0, late = 0, span = 0;
+    let usedDays = 0, gaps = 0, span = 0;
     perDay.forEach(day => {
       if (!day.length) return;
       usedDays++; day.sort((a, b) => toMin(a.start) - toMin(b.start));
       const first = toMin(day[0].start), last = Math.max(...day.map(s => toMin(s.end)));
-      span += last - first; early += Math.max(0, 8 * 60 - first); late += Math.max(0, last - 18 * 60);
+      span += last - first;
       for (let i = 1; i < day.length; i++) gaps += Math.max(0, toMin(day[i].start) - toMin(day[i - 1].end));
     });
-    return { value: usedDays * pref.days * 10000 + gaps * pref.gaps * 10 + early * pref.early + late * pref.late + span * pref.span,
-      usedDays, gaps, early, late, span };
+    return { usedDays, gaps, span };
   }
   function formatMinutes(value) { const h = Math.floor(value / 60), m = value % 60; return h ? `${h} h${m ? ` ${m} min` : ''}` : `${m} min`; }
   function runPlanner() {
@@ -491,7 +485,7 @@
       }
     }
     search(0);
-    plannerState.results = candidates.map(groups => ({ groups, metrics: scoreSchedule(groups, pref) })).sort((a, b) => a.metrics.value - b.metrics.value).slice(0, pref.limit);
+    plannerState.results = candidates.map(groups => ({ groups, metrics: scheduleMetrics(groups) })).slice(0, pref.limit);
     if (!plannerState.results.length) { resultEl.innerHTML = '<p class="planner-message">No encontramos una combinación sin choques con esas condiciones. Prueba ampliando las horas o permitiendo otro día.</p>'; return; }
     resultEl.innerHTML = `<div class="planner-results-head"><b>${plannerState.results.length} alternativa${plannerState.results.length === 1 ? '' : 's'}</b><span>${capped ? 'Búsqueda optimizada: se exploró una muestra amplia.' : `${visited.toLocaleString('es-CO')} combinaciones exploradas.`}</span></div>` + plannerState.results.map((result, index) => {
       const m = result.metrics; const detail = result.groups.map(x => `${x.code} · G.${x.group.name.split('-')[0]}`).join(' &nbsp; ');
@@ -501,6 +495,11 @@
   document.getElementById('btnPlanner').onclick = () => { plannerState.chosen = new Set(Object.keys(selection)); renderPlannerCourses(); document.getElementById('plannerResults').innerHTML = ''; plannerEl.classList.add('show'); };
   document.querySelector('.planner-close').onclick = () => plannerEl.classList.remove('show');
   plannerEl.onclick = e => { if (e.target === plannerEl) plannerEl.classList.remove('show'); };
+  document.addEventListener('click', e => {
+    document.querySelectorAll('.planner-group-picker[open]').forEach(picker => {
+      if (!picker.contains(e.target)) picker.open = false;
+    });
+  });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') plannerEl.classList.remove('show'); });
   document.getElementById('plannerSearch').oninput = renderPlannerCourses;
   document.getElementById('addBlock').onclick = () => {
