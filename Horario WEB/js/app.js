@@ -335,19 +335,19 @@
       <div class="planner-body">
         <section class="planner-courses"><div class="planner-section-title"><b>Materias</b><span id="plannerCount"></span></div><input id="plannerSearch" type="search" placeholder="Filtrar por nombre o código"><div id="plannerCourseList"></div></section>
         <section class="planner-options">
-          <div class="planner-section-title"><b>Restricciones</b><span>obligatorias</span></div>
-          <label class="planner-field">No iniciar antes de <select id="prefStart"></select></label>
-          <label class="planner-field">Terminar antes de <select id="prefEnd"></select></label>
-          <label class="planner-check"><input id="prefSaturday" type="checkbox"> No tener clases el sábado</label>
-          <label class="planner-check"><input id="prefSunday" type="checkbox" checked> No tener clases el domingo</label>
+          <div class="planner-section-title"><b>Condiciones obligatorias</b><span>deben cumplirse</span></div>
+          <div class="planner-option-group"><span class="planner-label">Horario permitido</span><div class="planner-inline-fields"><label>Desde <select id="prefStart"></select></label><label>Hasta <select id="prefEnd"></select></label></div></div>
+          <div class="planner-option-group"><span class="planner-label">Días en los que puedes tener clase</span><div class="planner-days" id="plannerDays"><label><input type="checkbox" data-day="0" checked><span>L</span></label><label><input type="checkbox" data-day="1" checked><span>M</span></label><label><input type="checkbox" data-day="2" checked><span>X</span></label><label><input type="checkbox" data-day="3" checked><span>J</span></label><label><input type="checkbox" data-day="4" checked><span>V</span></label><label><input type="checkbox" data-day="5" checked><span>S</span></label><label><input type="checkbox" data-day="6"><span>D</span></label></div></div>
+          <label class="planner-field">Máximo de materias por día <select id="maxCoursesDay"><option value="0">Sin límite</option><option value="1">1 materia</option><option value="2">2 materias</option><option value="3">3 materias</option><option value="4">4 materias</option><option value="5">5 materias</option></select></label>
           <label class="planner-check"><input id="prefKnown" type="checkbox" checked> Excluir grupos sin horario publicado</label>
-          <div class="planner-section-title preference-title"><b>Prioridades</b><span>0 = indiferente</span></div>
+          <div class="planner-option-group planner-blocks"><div class="planner-label-row"><span class="planner-label">Bloques que debes tener libres</span><span>opcional</span></div><div class="planner-block-form"><select id="blockDay"><option value="-1">Todos los días</option><option value="0">Lunes</option><option value="1">Martes</option><option value="2">Miércoles</option><option value="3">Jueves</option><option value="4">Viernes</option><option value="5">Sábado</option><option value="6">Domingo</option></select><select id="blockStart"></select><select id="blockEnd"></select><button id="addBlock" type="button">Añadir</button></div><div class="planner-block-list" id="plannerBlockList" aria-live="polite"></div></div>
+          <div class="planner-section-title preference-title"><b>Cómo ordenar las opciones</b><span>opcional</span></div>
           <label class="planner-field">Menos días de clase <select id="weightDays"></select></label>
           <label class="planner-field">Menos tiempo muerto <select id="weightGaps"></select></label>
           <label class="planner-field">Evitar madrugar <select id="weightEarly"></select></label>
           <label class="planner-field">Evitar terminar tarde <select id="weightLate"></select></label>
           <label class="planner-field">Jornadas más cortas <select id="weightSpan"></select></label>
-          <label class="planner-field">Alternativas a mostrar <select id="resultLimit"><option value="5">5</option><option value="10" selected>10</option><option value="20">20</option></select></label>
+          <label class="planner-field planner-results-limit">Alternativas a mostrar <select id="resultLimit"><option value="5">5</option><option value="10" selected>10</option><option value="20">20</option></select></label>
           <button class="primary planner-run" id="plannerRun" type="button">Generar alternativas</button>
           <p class="planner-note">La búsqueda se limita para mantener la app rápida; las opciones se ordenan por tus prioridades.</p>
         </section>
@@ -356,7 +356,7 @@
     </div>`;
   document.body.appendChild(plannerEl);
 
-  const plannerState = { chosen: new Set(), results: [] };
+  const plannerState = { chosen: new Set(), results: [], blocked: [] };
   const plannerCourseList = document.getElementById('plannerCourseList');
   const plannerCount = document.getElementById('plannerCount');
   const hourOptions = (id, from, to, selected) => {
@@ -365,6 +365,8 @@
   };
   hourOptions('prefStart', 6, 12, 6);
   hourOptions('prefEnd', 14, 22, 22);
+  hourOptions('blockStart', 6, 21, 12);
+  hourOptions('blockEnd', 7, 22, 14);
   ['weightDays', 'weightGaps', 'weightEarly', 'weightLate', 'weightSpan'].forEach(id => {
     const el = document.getElementById(id);
     ['Indiferente', 'Baja', 'Media', 'Alta'].forEach((name, value) => el.add(new Option(name, value, false, value === 2 && (id === 'weightDays' || id === 'weightGaps'))));
@@ -387,10 +389,15 @@
   }
 
   const sessionsOverlap = (a, b) => a.dayIdx === b.dayIdx && toMin(a.start) < toMin(b.end) && toMin(b.start) < toMin(a.end);
+  const dayName = index => DAYS[index] || 'Todos los días';
+  function renderBlockedSlots() {
+    const list = document.getElementById('plannerBlockList');
+    list.innerHTML = plannerState.blocked.map((slot, index) => `<span class="planner-block-chip">${dayName(slot.dayIdx)} · ${String(Math.floor(slot.start / 60)).padStart(2, '0')}:00–${String(Math.floor(slot.end / 60)).padStart(2, '0')}:00<button type="button" data-remove-block="${index}" aria-label="Quitar bloque">×</button></span>`).join('');
+  }
   function plannerPreferences() {
     const n = id => Number(document.getElementById(id).value);
-    return { start: n('prefStart'), end: n('prefEnd'), saturday: document.getElementById('prefSaturday').checked,
-      sunday: document.getElementById('prefSunday').checked, known: document.getElementById('prefKnown').checked,
+    const allowedDays = [...document.querySelectorAll('#plannerDays input:checked')].map(input => Number(input.dataset.day));
+    return { start: n('prefStart'), end: n('prefEnd'), allowedDays, maxCourses: n('maxCoursesDay'), known: document.getElementById('prefKnown').checked, blocked: plannerState.blocked,
       days: n('weightDays'), gaps: n('weightGaps'), early: n('weightEarly'), late: n('weightLate'), span: n('weightSpan'), limit: n('resultLimit') };
   }
   function groupAllowed(group, pref) {
@@ -400,8 +407,15 @@
       // una sesión malformada nunca es segura para calcular compatibilidad.
       if (!s.start || !s.end || !/^\d{1,2}:\d{2}$/.test(s.start) || !/^\d{1,2}:\d{2}$/.test(s.end)) return false;
       const start = toMin(s.start), end = toMin(s.end);
-      return start >= pref.start && end <= pref.end && !(pref.saturday && s.dayIdx === 5) && !(pref.sunday && s.dayIdx === 6);
+      const hitsBlockedSlot = pref.blocked.some(slot => (slot.dayIdx === -1 || slot.dayIdx === s.dayIdx) && start < slot.end && slot.start < end);
+      return start >= pref.start && end <= pref.end && pref.allowedDays.includes(s.dayIdx) && !hitsBlockedSlot;
     });
+  }
+  function scheduleAllowed(groups, pref) {
+    if (!pref.maxCourses) return true;
+    const coursesPerDay = Array.from({ length: 7 }, () => new Set());
+    groups.forEach(({ code, group }) => group.sessions.forEach(s => coursesPerDay[s.dayIdx].add(code)));
+    return coursesPerDay.every(courses => courses.size <= pref.maxCourses);
   }
   function scoreSchedule(groups, pref) {
     const perDay = Array.from({ length: 7 }, () => []);
@@ -421,6 +435,7 @@
   function runPlanner() {
     const resultEl = document.getElementById('plannerResults');
     const pref = plannerPreferences();
+    if (!pref.allowedDays.length) { resultEl.innerHTML = '<p class="planner-message">Selecciona al menos un día disponible.</p>'; return; }
     const chosen = [...plannerState.chosen].map(code => DATA.courses.find(c => c.code === code));
     if (!chosen.length) { resultEl.innerHTML = '<p class="planner-message">Selecciona al menos una materia.</p>'; return; }
     const entries = chosen.map(course => ({ course, groups: course.groups.filter(g => groupAllowed(g, pref)) })).sort((a, b) => a.groups.length - b.groups.length);
@@ -430,7 +445,7 @@
     const MAX_NODES = 120000, MAX_CANDIDATES = Math.max(pref.limit * 30, 150);
     function search(index) {
       if (visited >= MAX_NODES || candidates.length >= MAX_CANDIDATES) { capped = true; return; }
-      if (index === entries.length) { candidates.push(picked.map(x => ({ ...x }))); return; }
+      if (index === entries.length) { if (scheduleAllowed(picked, pref)) candidates.push(picked.map(x => ({ ...x }))); return; }
       const entry = entries[index];
       for (const group of entry.groups) {
         visited++;
@@ -454,6 +469,20 @@
   plannerEl.onclick = e => { if (e.target === plannerEl) plannerEl.classList.remove('show'); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') plannerEl.classList.remove('show'); });
   document.getElementById('plannerSearch').oninput = renderPlannerCourses;
+  document.getElementById('addBlock').onclick = () => {
+    const dayIdx = Number(document.getElementById('blockDay').value);
+    const start = Number(document.getElementById('blockStart').value);
+    const end = Number(document.getElementById('blockEnd').value);
+    if (start >= end) { document.getElementById('plannerResults').innerHTML = '<p class="planner-message">El bloque debe terminar después de la hora de inicio.</p>'; return; }
+    plannerState.blocked.push({ dayIdx, start, end });
+    renderBlockedSlots();
+  };
+  document.getElementById('plannerBlockList').onclick = e => {
+    const button = e.target.closest('button[data-remove-block]');
+    if (!button) return;
+    plannerState.blocked.splice(Number(button.dataset.removeBlock), 1);
+    renderBlockedSlots();
+  };
   document.getElementById('plannerRun').onclick = runPlanner;
   document.getElementById('plannerResults').onclick = e => {
     const button = e.target.closest('button[data-result]'); if (!button) return;
