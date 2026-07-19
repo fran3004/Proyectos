@@ -356,7 +356,7 @@
     </div>`;
   document.body.appendChild(plannerEl);
 
-  const plannerState = { chosen: new Set(), results: [], blocked: [] };
+  const plannerState = { chosen: new Set(), results: [], blocked: [], groupPreferences: new Map() };
   const plannerCourseList = document.getElementById('plannerCourseList');
   const plannerCount = document.getElementById('plannerCount');
   const hourOptions = (id, from, to, selected) => {
@@ -377,13 +377,44 @@
     plannerCourseList.innerHTML = '';
     for (const c of DATA.courses) {
       if (q && !c.code.toLowerCase().includes(q) && !c.name.toLowerCase().includes(q)) continue;
-      const label = document.createElement('label');
-      label.className = 'planner-course';
+      const label = document.createElement('article');
+      label.className = 'planner-course' + (plannerState.chosen.has(c.code) ? ' selected' : '');
       const input = document.createElement('input'); input.type = 'checkbox'; input.value = c.code; input.checked = plannerState.chosen.has(c.code);
-      input.onchange = () => { input.checked ? plannerState.chosen.add(c.code) : plannerState.chosen.delete(c.code); plannerCount.textContent = `${plannerState.chosen.size} seleccionadas`; };
+      input.onchange = () => {
+        if (input.checked) plannerState.chosen.add(c.code);
+        else { plannerState.chosen.delete(c.code); plannerState.groupPreferences.delete(c.code); }
+        renderPlannerCourses();
+      };
+      label.onclick = event => {
+        if (event.target === input || event.target.closest('details')) return;
+        input.checked = !input.checked;
+        input.dispatchEvent(new Event('change'));
+      };
       const text = document.createElement('span'); text.textContent = `${c.code} · ${c.name}`;
       const groups = document.createElement('small'); groups.textContent = `${c.groups.length} grupos`;
-      label.append(input, text, groups); plannerCourseList.appendChild(label);
+      label.append(input, text, groups);
+      if (plannerState.chosen.has(c.code)) {
+        const details = document.createElement('details'); details.className = 'planner-group-picker';
+        const selectedGroups = plannerState.groupPreferences.get(c.code);
+        const summary = document.createElement('summary');
+        summary.innerHTML = `Elegir grupos <em>${selectedGroups ? `${selectedGroups.size} seleccionados` : 'todos'}</em>`;
+        const choices = document.createElement('div'); choices.className = 'planner-group-choices';
+        c.groups.forEach(group => {
+          const choice = document.createElement('label'); choice.className = 'planner-group-choice';
+          const groupInput = document.createElement('input'); groupInput.type = 'checkbox'; groupInput.checked = !selectedGroups || selectedGroups.has(group.name);
+          const groupText = document.createElement('span'); groupText.textContent = `G. ${group.name}`;
+          groupInput.onchange = () => {
+            const allowed = new Set(selectedGroups || c.groups.map(item => item.name));
+            groupInput.checked ? allowed.add(group.name) : allowed.delete(group.name);
+            if (allowed.size === c.groups.length) plannerState.groupPreferences.delete(c.code);
+            else plannerState.groupPreferences.set(c.code, allowed);
+            renderPlannerCourses();
+          };
+          choice.append(groupInput, groupText); choices.appendChild(choice);
+        });
+        details.append(summary, choices); label.appendChild(details);
+      }
+      plannerCourseList.appendChild(label);
     }
     plannerCount.textContent = `${plannerState.chosen.size} seleccionadas`;
   }
@@ -438,7 +469,10 @@
     if (!pref.allowedDays.length) { resultEl.innerHTML = '<p class="planner-message">Selecciona al menos un día disponible.</p>'; return; }
     const chosen = [...plannerState.chosen].map(code => DATA.courses.find(c => c.code === code));
     if (!chosen.length) { resultEl.innerHTML = '<p class="planner-message">Selecciona al menos una materia.</p>'; return; }
-    const entries = chosen.map(course => ({ course, groups: course.groups.filter(g => groupAllowed(g, pref)) })).sort((a, b) => a.groups.length - b.groups.length);
+    const entries = chosen.map(course => {
+      const preferredGroups = plannerState.groupPreferences.get(course.code);
+      return { course, groups: course.groups.filter(group => groupAllowed(group, pref) && (!preferredGroups || preferredGroups.has(group.name))) };
+    }).sort((a, b) => a.groups.length - b.groups.length);
     const unavailable = entries.filter(e => !e.groups.length).map(e => e.course.code);
     if (unavailable.length) { resultEl.innerHTML = `<p class="planner-message">No hay grupos que cumplan las restricciones para: <b>${unavailable.join(', ')}</b>. Relaja alguna condición.</p>`; return; }
     const candidates = [], picked = [], activeSessions = []; let visited = 0, capped = false;
