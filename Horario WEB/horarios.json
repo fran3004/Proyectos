@@ -30,28 +30,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "101-BLQ C-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "301-BLQ-H-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "03-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -68,6 +46,28 @@
        "room": "203-BLQ-H-CAMPUS",
        "start": "12:00",
        "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "01-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "101-BLQ C-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "301-BLQ-H-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -154,6 +154,21 @@
    "status": "ACTIVO",
    "groups": [
     {
+     "name": "02-CAMPUS AMBIENTAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "202-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "18:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "09-CAMBIARSE",
      "teacher": "NDOC",
      "sessions": [
@@ -198,21 +213,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "02-CAMPUS AMBIENTAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "202-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "18:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "06-CAMPUS INGENIERIA",
      "teacher": "NDOC",
      "sessions": [
@@ -250,21 +250,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "05-CAMPUS SISTEMAS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "402-BLQ B-CAMPUS",
-       "start": "13:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "03-CAMPUS AGROINDUSTRIAL",
      "teacher": "NDOC",
      "sessions": [
@@ -274,6 +259,21 @@
        "room": "205-BLQ-H-CAMPUS",
        "start": "16:00",
        "end": "18:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "05-CAMPUS SISTEMAS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "402-BLQ B-CAMPUS",
+       "start": "13:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -332,58 +332,58 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "19-CAMPUS",
+     "name": "05-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "401-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "P1-01-CAMPUS LAB FIS",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P1-03-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "204-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "403-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "204-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
     },
     {
-     "name": "01-CAMPUS",
+     "name": "22-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "204-BLQ B-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
+       "room": "205-BLQ-H-CAMPUS",
+       "start": "09:00",
+       "end": "10:59"
       },
       {
        "day": "Martes",
        "dayIdx": 1,
        "room": "P1-01-CAMPUS LAB FIS",
-       "start": "06:00",
-       "end": "07:59"
+       "start": "08:00",
+       "end": "09:59"
       },
       {
        "day": "Miércoles",
        "dayIdx": 2,
-       "room": "204-BLQ B-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
+       "room": "405-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -411,35 +411,6 @@
        "day": "Jueves",
        "dayIdx": 3,
        "room": "202-BLQ B-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "14-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "507-BLQ-H-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "P1-02-CAMPUS LAB FIS",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "205-BLQ-H-CAMPUS",
        "start": "12:00",
        "end": "13:59"
       }
@@ -477,6 +448,93 @@
      "end": "15-12-2026"
     },
     {
+     "name": "01-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "204-BLQ B-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
+      },
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "P1-01-CAMPUS LAB FIS",
+       "start": "06:00",
+       "end": "07:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "204-BLQ B-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "08-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "302-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "204-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "P1-01-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "19-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "401-BLQ C-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "P1-03-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "403-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "07-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -498,64 +556,6 @@
        "day": "Jueves",
        "dayIdx": 3,
        "room": "204-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "13-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "507-BLQ-H-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P1-01-CAMPUS LAB FIS",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "205-BLQ-H-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "11-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "P1-01-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "401-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "402-BLQ B-CAMPUS",
        "start": "16:00",
        "end": "17:59"
       }
@@ -593,6 +593,35 @@
      "end": "15-12-2026"
     },
     {
+     "name": "11-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "P1-01-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "401-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "402-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "23-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -616,93 +645,6 @@
        "room": "P1-01-CAMPUS LAB FIS",
        "start": "08:00",
        "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "22-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "205-BLQ-H-CAMPUS",
-       "start": "09:00",
-       "end": "10:59"
-      },
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "P1-01-CAMPUS LAB FIS",
-       "start": "08:00",
-       "end": "09:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "405-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "P1-01-CAMPUS LAB FIS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "204-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "204-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "08-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "302-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "204-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "P1-01-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -738,6 +680,64 @@
      "end": "15-12-2026"
     },
     {
+     "name": "13-VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "507-BLQ-H-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "P1-01-CAMPUS LAB FIS",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "205-BLQ-H-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "14-VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "507-BLQ-H-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "P1-02-CAMPUS LAB FIS",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "205-BLQ-H-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -767,29 +767,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "18-CAMPUS",
+     "name": "12-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "301-BLQ B-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
+       "room": "401-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "401-BLQ B-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
+       "room": "402-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
       },
       {
        "day": "Viernes",
        "dayIdx": 4,
-       "room": "P1-02-CAMPUS LAB FIS",
-       "start": "12:00",
-       "end": "13:59"
+       "room": "P1-03-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -854,29 +854,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "12-CAMPUS",
+     "name": "18-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "401-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "301-BLQ B-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "402-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "401-BLQ B-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
       },
       {
        "day": "Viernes",
        "dayIdx": 4,
-       "room": "P1-03-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "P1-02-CAMPUS LAB FIS",
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -912,21 +912,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "20-COPEY",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "NREF",
-       "start": "08:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "21-COPEY",
      "teacher": "NDOC",
      "sessions": [
@@ -940,6 +925,21 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "20-COPEY",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "NREF",
+       "start": "08:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -948,6 +948,35 @@
    "name": "ONDAS",
    "status": "ACTIVO",
    "groups": [
+    {
+     "name": "01-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "201-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "P1-04-CAMPUS LAB FIS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "508-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
     {
      "name": "06-CAMPUS",
      "teacher": "NDOC",
@@ -978,29 +1007,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "05-CAMPUS",
+     "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "407-BLQ-H-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "201-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
       },
       {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "P1-03-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "508-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
       },
       {
        "day": "Viernes",
        "dayIdx": 4,
-       "room": "407-BLQ-H-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "P1-04-CAMPUS LAB FIS",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -1036,58 +1065,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-CAMPUS",
+     "name": "05-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "201-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
+       "room": "407-BLQ-H-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
       },
       {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P1-04-CAMPUS LAB FIS",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "508-BLQ-H-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "201-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "508-BLQ-H-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "P1-03-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
       },
       {
        "day": "Viernes",
        "dayIdx": 4,
-       "room": "P1-04-CAMPUS LAB FIS",
-       "start": "10:00",
-       "end": "11:59"
+       "room": "407-BLQ-H-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -1130,93 +1130,6 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "04-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "304-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "304-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "P1-03-CAMPUS LAB FIS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "07-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "501-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P1-02-CAMPUS LAB FIS",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "302-BLQ B-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "09-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "304-BLQ A-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P1-01-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "302-BLQ C-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "06-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -1246,58 +1159,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "11-CAMPUS",
+     "name": "08-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "402-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "501-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
+      },
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "P1-03-CAMPUS LAB FIS",
+       "start": "07:00",
+       "end": "08:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "P1-04-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "303-BLQ A-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "508-BLQ-H-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "206-BLQ-H-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "P1-02-CAMPUS LAB FIS",
-       "start": "10:00",
-       "end": "11:59"
+       "room": "302-BLQ B-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -1333,29 +1217,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "08-CAMPUS",
+     "name": "09-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "501-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
+       "room": "304-BLQ A-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "P1-03-CAMPUS LAB FIS",
-       "start": "07:00",
-       "end": "08:59"
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "P1-01-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
       },
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "302-BLQ B-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "302-BLQ C-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -1404,16 +1288,16 @@
       {
        "day": "Viernes",
        "dayIdx": 4,
-       "room": "P1-04-CAMPUS LAB FIS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "302-BLQ C-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
        "day": "Viernes",
        "dayIdx": 4,
-       "room": "302-BLQ C-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
+       "room": "P1-04-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -1449,6 +1333,93 @@
      "end": "15-12-2026"
     },
     {
+     "name": "11-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "402-BLQ C-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "P1-04-CAMPUS LAB FIS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "303-BLQ A-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "04-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "304-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "304-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "P1-03-CAMPUS LAB FIS",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "05-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "508-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "206-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "P1-02-CAMPUS LAB FIS",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -1470,6 +1441,35 @@
        "day": "Viernes",
        "dayIdx": 4,
        "room": "P1-02-CAMPUS LAB FIS",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "501-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "P1-02-CAMPUS LAB FIS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "302-BLQ B-CAMPUS",
        "start": "08:00",
        "end": "09:59"
       }
@@ -1515,21 +1515,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "11-DERECHO",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "404-BLQ A-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "10-DERECHO",
      "teacher": "NDOC",
      "sessions": [
@@ -1545,15 +1530,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "13-SISTEMAS",
+     "name": "11-DERECHO",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "202-BLQ-H-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "404-BLQ A-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -1575,90 +1560,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "09-AMBIENTAL",
+     "name": "13-SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "201-BLQ A-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "12-SISTEMAS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "203-BLQ C-CAMPUS",
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "202-BLQ-H-CAMPUS",
        "start": "12:00",
        "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "20-PLATO ING SISTEMAS VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "NREF",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "21-BANCO ING SISTEMAS VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "NREF",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "14-DERECHO",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "407-BLQ-H-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "15-FISIOTERAPIA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "404-BLOQ C-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -1695,6 +1605,66 @@
      "end": "15-12-2026"
     },
     {
+     "name": "20-PLATO ING SISTEMAS VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "NREF",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "12-SISTEMAS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "203-BLQ C-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "21-BANCO ING SISTEMAS VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "NREF",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "09-AMBIENTAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "201-BLQ A-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "06-SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
@@ -1704,6 +1674,36 @@
        "room": "101-BLQ C-CAMPUS",
        "start": "16:00",
        "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "14-DERECHO",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "407-BLQ-H-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "15-FISIOTERAPIA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "404-BLOQ C-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -1852,6 +1852,21 @@
      "end": "15-12-2026"
     },
     {
+     "name": "11-FISIOTERAPIA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "NREF",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -1861,21 +1876,6 @@
        "room": "201-BLQ A-CAMPUS",
        "start": "16:00",
        "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "04-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "202-BLQ A-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -1895,6 +1895,21 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "04-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "202-BLQ A-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -1904,15 +1919,15 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "06-CAMPUS",
+     "name": "03-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "204-BLQ E-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
+       "room": "201D-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -1934,15 +1949,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "03-CAMPUS",
+     "name": "06-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "201D-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "204-BLQ E-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -2128,21 +2143,6 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "403-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -2152,6 +2152,21 @@
        "room": "403-BLQ C-CAMPUS",
        "start": "14:00",
        "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "05-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "403-BLQ C-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -2188,7 +2203,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-CAMBIAR DE GRUPO",
+     "name": "06-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -2197,36 +2212,6 @@
        "room": "404-BLQ-H-CAMPUS",
        "start": "06:00",
        "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "08-CAMBIAR DE GRUPO",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "402-BLQ E-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "407-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -2246,6 +2231,21 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "02-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "407-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -2255,7 +2255,7 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "02-CAMPUS",
+     "name": "02-ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -2285,7 +2285,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "03-CAMPUS",
+     "name": "03-ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -2330,43 +2330,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-ING.AGROINDUSTRIAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "402-BLQ E-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "08-ING AGROINDUSTRIAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "301-BLQ A-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      },
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "NREF",
-       "start": "15:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "07-ING.AGROINDUSTRIAL",
      "teacher": "NDOC",
      "sessions": [
@@ -2387,6 +2350,28 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "08-ING AGROINDUSTRIAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "NREF",
+       "start": "15:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "301-BLQ A-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -2396,20 +2381,42 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "03-ING.AMBIENTAL",
+     "name": "11-PLATO ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "201-BLQ C-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
+       "room": "NREF",
+       "start": "16:00",
+       "end": "17:59"
       },
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "302-BLQ B-CAMPUS",
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "NREF",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-AGROINDUSTRIA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "104-BLQ C-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "104-BLQ C-CAMPUS",
        "start": "06:00",
        "end": "07:59"
       }
@@ -2418,7 +2425,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "11-PLATO ING SISTEMAS",
+     "name": "11-BANCO ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -2462,50 +2469,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "05-SISTEMAS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "202-BLQ-H-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "202-BLQ-H-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "07-AGROINDUSTRIA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "104-BLQ C-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "104-BLQ C-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "09-SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
@@ -2528,6 +2491,50 @@
      "end": "15-12-2026"
     },
     {
+     "name": "03-ING.AMBIENTAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "201-BLQ C-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "302-BLQ B-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "05-SISTEMAS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "202-BLQ-H-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "202-BLQ-H-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "06-SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
@@ -2544,28 +2551,6 @@
        "room": "204-BLQ-H-CAMPUS",
        "start": "18:00",
        "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "11-BANCO ING SISTEMAS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "NREF",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "NREF",
-       "start": "16:00",
-       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -2616,28 +2601,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-ING.AMBIENTAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "302-BLQ B-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "203-BLQ B-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "02-ING. AMBIENTAL",
      "teacher": "NDOC",
      "sessions": [
@@ -2654,6 +2617,28 @@
        "room": "202-BLQ B-CAMPUS",
        "start": "14:00",
        "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "01-ING.AMBIENTAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "302-BLQ B-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "203-BLQ B-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
       }
      ],
      "start": "03-08-2026",
@@ -2704,7 +2689,29 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "07-BANCO ING SISTEMAS",
+     "name": "01-PRIMER SEMESTRE",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "303-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "303-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "06-PLATO ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -2726,7 +2733,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-PLATO ING SISTEMAS",
+     "name": "07-BANCO ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -2770,50 +2777,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "03-PRIMER SEMESTRE",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "101-AULA PISO1 BIBLI",
-       "start": "06:00",
-       "end": "07:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "201-BLQ B-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "01-PRIMER SEMESTRE",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "303-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "303-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "05-PRIMER SEMESTRE",
      "teacher": "NDOC",
      "sessions": [
@@ -2830,6 +2793,28 @@
        "room": "305-BLQ-H-CAMPUS",
        "start": "16:00",
        "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "03-PRIMER SEMESTRE",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "101-AULA PISO1 BIBLI",
+       "start": "06:00",
+       "end": "07:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "201-BLQ B-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
       }
      ],
      "start": "03-08-2026",
@@ -2887,28 +2872,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "10-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "507-BLQ-H-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "204-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "16:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "03-AMBIENTAL",
      "teacher": "NDOC",
      "sessions": [
@@ -2953,66 +2916,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "07-ELECTRONICA",
+     "name": "10-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "202-BLQ C-CAMPUS",
-       "start": "13:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "504-BLQ-H-CAMPUS",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "13-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "204-BLQ A-CAMPUS",
-       "start": "18:00",
-       "end": "18:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "303-BLQ B-CAMPUS",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "02-AMBIENTAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "302-BLQ B-CAMPUS",
-       "start": "16:00",
-       "end": "16:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "301-BLQ B-CAMPUS",
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "507-BLQ-H-CAMPUS",
        "start": "16:00",
        "end": "17:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "204-BLQ C-CAMPUS",
+       "start": "16:00",
+       "end": "16:59"
       }
      ],
      "start": "03-08-2026",
@@ -3041,6 +2960,50 @@
      "end": "15-12-2026"
     },
     {
+     "name": "13-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "204-BLQ A-CAMPUS",
+       "start": "18:00",
+       "end": "18:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "303-BLQ B-CAMPUS",
+       "start": "18:00",
+       "end": "19:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-ELECTRONICA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "202-BLQ C-CAMPUS",
+       "start": "13:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "504-BLQ-H-CAMPUS",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "11-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3056,6 +3019,50 @@
        "dayIdx": 4,
        "room": "505-BLQ-H-CAMPUS",
        "start": "09:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "02-AMBIENTAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "302-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "16:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "301-BLQ B-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "01-AMBIENTAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "401-BLQ A-CAMPUS",
+       "start": "08:00",
+       "end": "08:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "502-BLQ-H-CAMPUS",
+       "start": "08:00",
        "end": "09:59"
       }
      ],
@@ -3079,28 +3086,6 @@
        "room": "101-BLQ B-CAMPUS",
        "start": "14:00",
        "end": "14:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "01-AMBIENTAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "401-BLQ A-CAMPUS",
-       "start": "08:00",
-       "end": "08:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "502-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -3135,72 +3120,6 @@
    "name": "CALCULO INTEGRAL",
    "status": "ACTIVO",
    "groups": [
-    {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "102-BLQ C-CAMPUS",
-       "start": "17:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "402-BLQ A-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "11-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "404-BLQ A-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "101-AULA PISO1 BIBLI",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "04-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "302-BLQ A-CAMPUS",
-       "start": "10:00",
-       "end": "10:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "202-BLQ-H-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
     {
      "name": "01-CAMPUS",
      "teacher": "NDOC",
@@ -3246,6 +3165,94 @@
      "end": "15-12-2026"
     },
     {
+     "name": "02-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "102-BLQ C-CAMPUS",
+       "start": "17:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "402-BLQ A-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "04-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "302-BLQ A-CAMPUS",
+       "start": "10:00",
+       "end": "10:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "202-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "11-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "404-BLQ A-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "101-AULA PISO1 BIBLI",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "09-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "302-BLQ B-CAMPUS",
+       "start": "17:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "404-BLQ B-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "12-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3262,28 +3269,6 @@
        "room": "403-F",
        "start": "14:00",
        "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "13-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "303-BLQ E-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "302-BLQ E-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -3312,22 +3297,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "09-CAMPUS",
+     "name": "13-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "302-BLQ B-CAMPUS",
-       "start": "17:00",
-       "end": "17:59"
+       "room": "303-BLQ E-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
       },
       {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "404-BLQ B-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "302-BLQ E-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -3393,21 +3378,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "202-BLQ B-CAMPUS",
-       "start": "13:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "10-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3421,6 +3391,21 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "202-BLQ B-CAMPUS",
+       "start": "13:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -3429,28 +3414,6 @@
    "name": "ANALISIS NUMERICO",
    "status": "ACTIVO",
    "groups": [
-    {
-     "name": "06-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "401-SALA INTERNET",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "203 -BLQ I-INFORMATI",
-       "start": "10:00",
-       "end": "10:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
     {
      "name": "05-CAMPUS",
      "teacher": "NDOC",
@@ -3497,21 +3460,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "203 -BLQ I-INFORMATI",
-       "start": "06:00",
-       "end": "08:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3521,6 +3469,21 @@
        "room": "203 -BLQ I-INFORMATI",
        "start": "09:00",
        "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "01-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "203 -BLQ I-INFORMATI",
+       "start": "06:00",
+       "end": "08:59"
       }
      ],
      "start": "03-08-2026",
@@ -3600,50 +3563,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "102-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "102-BLQ C-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "08-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "303-BLQ B-CAMPUS",
-       "start": "19:00",
-       "end": "20:59"
-      },
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "304-BLQ A-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3688,6 +3607,50 @@
      "end": "15-12-2026"
     },
     {
+     "name": "01-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "102-BLQ C-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "102-BLQ C-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "08-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "303-BLQ B-CAMPUS",
+       "start": "19:00",
+       "end": "20:59"
+      },
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "304-BLQ A-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3716,6 +3679,28 @@
    "name": "ECUACIONES DIFERENCIALES",
    "status": "ACTIVO",
    "groups": [
+    {
+     "name": "03-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "407-BLQ-H-CAMPUS",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "402H-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
     {
      "name": "04-CAMPUS",
      "teacher": "NDOC",
@@ -3761,28 +3746,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "03-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "407-BLQ-H-CAMPUS",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "402H-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -3811,6 +3774,28 @@
    "name": "ESTADISTICA DESCRIPTIVA E INFERENCIAL",
    "status": "ACTIVO",
    "groups": [
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "502-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "203-BLQ-H-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
     {
      "name": "01-CAMPUS",
      "teacher": "NDOC",
@@ -3878,19 +3863,19 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-CAMPUS",
+     "name": "05-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "502-BLQ-H-CAMPUS",
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "304-BLQ B-CAMPUS",
        "start": "10:00",
        "end": "11:59"
       },
       {
-       "day": "Miércoles",
-       "dayIdx": 2,
+       "day": "Viernes",
+       "dayIdx": 4,
        "room": "203-BLQ-H-CAMPUS",
        "start": "10:00",
        "end": "11:59"
@@ -3916,28 +3901,6 @@
        "room": "104-BLQ C-CAMPUS",
        "start": "14:00",
        "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "304-BLQ B-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "203-BLQ-H-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -4033,6 +3996,21 @@
      "end": "15-12-2026"
     },
     {
+     "name": "03-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "304-BLQ B-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "04-SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
@@ -4057,21 +4035,6 @@
        "room": "304-BLQ B-CAMPUS",
        "start": "08:00",
        "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "03-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "304-BLQ B-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -4227,21 +4190,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "03-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "304-BLQ A-CAMPUS",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "05-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4251,6 +4199,21 @@
        "room": "302-BLQ C-CAMPUS",
        "start": "16:00",
        "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "03-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "304-BLQ A-CAMPUS",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -4272,7 +4235,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "05-PLATO ING SISTEMAS",
+     "name": "07-PLATO ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -4316,28 +4279,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "302-INFORMATICA",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "302-INFORMATICA",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "09-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4354,6 +4295,28 @@
        "room": "402-SALA INTERNET",
        "start": "06:00",
        "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "302-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "302-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -4382,22 +4345,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "10-CAMPUS",
+     "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "303-INFORMATICA",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "202-BLOQ I-INFORMATI",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "303-INFORMATICA",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "202-BLOQ I-INFORMATI",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -4426,28 +4389,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "07-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "301-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "301-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4470,22 +4411,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "04-CAMPUS",
+     "name": "07-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "202-BLOQ I-INFORMATI",
-       "start": "14:00",
-       "end": "15:59"
+       "room": "301-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "202-BLOQ I-INFORMATI",
-       "start": "14:00",
-       "end": "15:59"
+       "room": "301-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -4521,50 +4462,6 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "01-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "301-INFORMATICA",
-       "start": "06:00",
-       "end": "07:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "301-INFORMATICA",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "302-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "302-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4587,22 +4484,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "07-CAMPUS",
+     "name": "01-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Martes",
-       "dayIdx": 1,
+       "day": "Lunes",
+       "dayIdx": 0,
        "room": "301-INFORMATICA",
-       "start": "10:00",
-       "end": "11:59"
+       "start": "06:00",
+       "end": "07:59"
       },
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "303-INFORMATICA",
-       "start": "10:00",
-       "end": "11:59"
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "301-INFORMATICA",
+       "start": "06:00",
+       "end": "07:59"
       }
      ],
      "start": "03-08-2026",
@@ -4653,29 +4550,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-CAMPUS",
+     "name": "05-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "302-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
+       "room": "301-INFORMATICA",
+       "start": "10:00",
+       "end": "11:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "302-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
+       "room": "303-INFORMATICA",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
     },
     {
-     "name": "08-CAMPUS",
+     "name": "06-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -4704,6 +4601,28 @@
    "status": "ACTIVO",
    "groups": [
     {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "403-SALA INTERNET",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "403-SALA INTERNET",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "01-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4726,28 +4645,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "08-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "202-BLOQ I-INFORMATI",
-       "start": "18:00",
-       "end": "19:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "202-BLOQ I-INFORMATI",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4764,50 +4661,6 @@
        "room": "202-BLOQ I-INFORMATI",
        "start": "16:00",
        "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "07-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "402-SALA INTERNET",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "402-SALA INTERNET",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "09-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "403-SALA INTERNET",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "403-SALA INTERNET",
-       "start": "10:00",
-       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -4836,28 +4689,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "202-BLOQ I-INFORMATI",
-       "start": "06:00",
-       "end": "07:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "202-BLOQ I-INFORMATI",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "05-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -4880,7 +4711,29 @@
      "end": "15-12-2026"
     },
     {
-     "name": "11-CAMPUS",
+     "name": "02-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "202-BLOQ I-INFORMATI",
+       "start": "06:00",
+       "end": "07:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "202-BLOQ I-INFORMATI",
+       "start": "06:00",
+       "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "08-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -4896,50 +4749,6 @@
        "room": "402-SALA INTERNET",
        "start": "06:00",
        "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "06-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "18:00",
-       "end": "19:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "10-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "402-SALA INTERNET",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "402-SALA INTERNET",
-       "start": "10:00",
-       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -4952,21 +4761,6 @@
    "name": "SEMILLERO DE INVESTIGACION",
    "status": "ACTIVO",
    "groups": [
-    {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "302-BLQ-H-CAMPUS",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
     {
      "name": "01-CAMPUS",
      "teacher": "NDOC",
@@ -4983,15 +4777,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "04-CAMPUS",
+     "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "406-BLQ-H-CAMPUS",
-       "start": "08:00",
-       "end": "09:59"
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "302-BLQ-H-CAMPUS",
+       "start": "06:00",
+       "end": "07:59"
       }
      ],
      "start": "03-08-2026",
@@ -5013,15 +4807,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-CAMPUS",
+     "name": "04-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "402-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "406-BLQ-H-CAMPUS",
+       "start": "08:00",
+       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -5041,6 +4835,21 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "402-BLQ C-CAMPUS",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -5049,6 +4858,28 @@
    "name": "ALGORITMOS Y FUNDAMENTOS DE PROGRAMACION",
    "status": "ACTIVO",
    "groups": [
+    {
+     "name": "06-ING. SISTEMAS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "201-BLQ I-INFORMATIC",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "201-BLQ I-INFORMATIC",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
     {
      "name": "11-ING. ELECTRONICA",
      "teacher": "NDOC",
@@ -5072,28 +4903,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-ING. SISTEMAS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "08:00",
-       "end": "09:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "18-ING. AGRO-AMBIEN",
      "teacher": "NDOC",
      "sessions": [
@@ -5110,6 +4919,28 @@
        "room": "403-SALA INTERNET",
        "start": "16:00",
        "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "01-ING. SISTEMAS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "201-BLQ I-INFORMATIC",
+       "start": "08:00",
+       "end": "09:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "201-BLQ I-INFORMATIC",
+       "start": "08:00",
+       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -5160,28 +4991,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "12-ING. ELECTRONICA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "03-ING. SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
@@ -5204,22 +5013,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "06-ING. SISTEMAS",
+     "name": "12-ING. ELECTRONICA",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
        "room": "201-BLQ I-INFORMATIC",
-       "start": "16:00",
-       "end": "17:59"
+       "start": "14:00",
+       "end": "15:59"
       },
       {
        "day": "Miércoles",
        "dayIdx": 2,
        "room": "201-BLQ I-INFORMATIC",
-       "start": "16:00",
-       "end": "17:59"
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -5248,20 +5057,20 @@
      "end": "15-12-2026"
     },
     {
-     "name": "10-ING. ELECTRONICA",
+     "name": "16-ING. AGRO-AMBIEN",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "201-BLQ I-INFORMATIC",
+       "room": "404-SALA INTERNET",
        "start": "12:00",
        "end": "13:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "201-BLQ I-INFORMATIC",
+       "room": "404-SALA INTERNET",
        "start": "12:00",
        "end": "13:59"
       }
@@ -5270,66 +5079,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "14-ING. AGRO-AMBIEN",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "404-SALA INTERNET",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "404-SALA INTERNET",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "20-ING. AGRO-AMBIEN",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "404-SALA INTERNET",
-       "start": "18:00",
-       "end": "19:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "404-SALA INTERNET",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "07-ING. SISTEMAS",
+     "name": "08-ING. ELECTRONICA",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
        "room": "201-BLQ I-INFORMATIC",
-       "start": "14:00",
-       "end": "15:59"
+       "start": "16:00",
+       "end": "17:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
        "room": "201-BLQ I-INFORMATIC",
-       "start": "14:00",
-       "end": "15:59"
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -5358,22 +5123,66 @@
      "end": "15-12-2026"
     },
     {
-     "name": "16-ING. AGRO-AMBIEN",
+     "name": "14-ING. AGRO-AMBIEN",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
        "room": "404-SALA INTERNET",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "404-SALA INTERNET",
+       "start": "14:00",
+       "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "10-ING. ELECTRONICA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "201-BLQ I-INFORMATIC",
        "start": "12:00",
        "end": "13:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "404-SALA INTERNET",
+       "room": "201-BLQ I-INFORMATIC",
        "start": "12:00",
        "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-ING. SISTEMAS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "201-BLQ I-INFORMATIC",
+       "start": "14:00",
+       "end": "15:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "201-BLQ I-INFORMATIC",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -5446,22 +5255,22 @@
      "end": "15-12-2026"
     },
     {
-     "name": "08-ING. ELECTRONICA",
+     "name": "20-ING. AGRO-AMBIEN",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "404-SALA INTERNET",
+       "start": "18:00",
+       "end": "19:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "201-BLQ I-INFORMATIC",
-       "start": "16:00",
-       "end": "17:59"
+       "room": "404-SALA INTERNET",
+       "start": "18:00",
+       "end": "19:59"
       }
      ],
      "start": "03-08-2026",
@@ -5490,7 +5299,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "20-PLATO ING SISTEMAS",
+     "name": "22-PLATO ING SISTEMAS",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -5534,28 +5343,6 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "303-INFORMATICA",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "303-INFORMATICA",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "01-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -5578,22 +5365,44 @@
      "end": "15-12-2026"
     },
     {
-     "name": "04-CAMPUS",
+     "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "302-INFORMATICA",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "303-INFORMATICA",
+       "start": "10:00",
+       "end": "11:59"
       },
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "302-INFORMATICA",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "303-INFORMATICA",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "402-SALA INTERNET",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "402-SALA INTERNET",
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -5642,6 +5451,50 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "04-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "302-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "302-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "301-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "301-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -5667,6 +5520,72 @@
        "room": "303-INFORMATICA",
        "start": "06:00",
        "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "302-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "302-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "303-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "303-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "08-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "302-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "302-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -5774,58 +5693,14 @@
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "402-SALA INTERNET",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "504-BLQ-H-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "403-SALA INTERNET",
-       "start": "18:00",
-       "end": "19:59"
+       "room": "404-SALA INTERNET",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
        "day": "Miércoles",
        "dayIdx": 2,
-       "room": "403-SALA INTERNET",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "02-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "302-BLQ C-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "203-BLQ C-CAMPUS",
+       "room": "404-SALA INTERNET",
        "start": "14:00",
        "end": "15:59"
       }
@@ -5838,16 +5713,38 @@
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "403-SALA INTERNET",
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "404-SALA INTERNET",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "404-SALA INTERNET",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "02-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "404-SALA INTERNET",
        "start": "18:00",
        "end": "19:59"
       },
       {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "403-SALA INTERNET",
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "404-SALA INTERNET",
        "start": "18:00",
        "end": "19:59"
       }
@@ -5860,18 +5757,18 @@
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "201-BLQ E-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "403-SALA INTERNET",
+       "start": "14:00",
+       "end": "15:59"
       },
       {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "502-BLQ-H-CAMPUS",
-       "start": "16:00",
-       "end": "17:59"
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "403-SALA INTERNET",
+       "start": "14:00",
+       "end": "15:59"
       }
      ],
      "start": "03-08-2026",
@@ -6044,28 +5941,6 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
-    },
-    {
-     "name": "04-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "301-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "301-INFORMATICA",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
     }
    ]
   },
@@ -6097,6 +5972,28 @@
      "end": "15-12-2026"
     },
     {
+     "name": "04-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "403-SALA INTERNET",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "403-SALA INTERNET",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "03-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -6135,6 +6032,28 @@
        "room": "403-SALA INTERNET",
        "start": "12:00",
        "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "05-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "403-SALA INTERNET",
+       "start": "18:00",
+       "end": "19:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "403-SALA INTERNET",
+       "start": "18:00",
+       "end": "19:59"
       }
      ],
      "start": "03-08-2026",
@@ -6148,20 +6067,20 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "02-CAMPUS",
+     "name": "02-SALA TALENTO TECH",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
-       "room": "P4-05 LAB-DESARR SOF",
+       "room": "NREF",
        "start": "12:00",
        "end": "13:59"
       },
       {
        "day": "Miércoles",
        "dayIdx": 2,
-       "room": "P4-05 LAB-DESARR SOF",
+       "room": "NREF",
        "start": "12:00",
        "end": "13:59"
       }
@@ -6170,20 +6089,20 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-CAMPUS",
+     "name": "01-SALA TALENTO TECH",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "P4-05 LAB-DESARR SOF",
+       "room": "NREF",
        "start": "12:00",
        "end": "13:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "P4-05 LAB-DESARR SOF",
+       "room": "NREF",
        "start": "12:00",
        "end": "13:59"
       }
@@ -6192,20 +6111,20 @@
      "end": "15-12-2026"
     },
     {
-     "name": "03-CAMPUS",
+     "name": "03-SALA TALENTO TECH",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "P4-05 LAB-DESARR SOF",
+       "room": "NREF",
        "start": "06:00",
        "end": "07:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "P4-05 LAB-DESARR SOF",
+       "room": "NREF",
        "start": "06:00",
        "end": "07:59"
       }
@@ -6220,28 +6139,6 @@
    "name": "INGENIERIA DE SOFTWARE II",
    "status": "ACTIVO",
    "groups": [
-    {
-     "name": "05-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "P4-05 LAB-DESARR SOF",
-       "start": "14:00",
-       "end": "15:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P4-05 LAB-DESARR SOF",
-       "start": "14:00",
-       "end": "15:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
     {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
@@ -6338,28 +6235,6 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "04-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "P4-05 LAB-DESARR SOF",
-       "start": "16:00",
-       "end": "17:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "P4-05 LAB-DESARR SOF",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "01-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -6376,6 +6251,28 @@
        "room": "302-INFORMATICA",
        "start": "14:00",
        "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "04-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "303-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "303-INFORMATICA",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -6543,6 +6440,28 @@
      "end": "15-12-2026"
     },
     {
+     "name": "03-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "303-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "303-INFORMATICA",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "02-CAMPUS",
      "teacher": "NDOC",
      "sessions": [
@@ -6563,28 +6482,6 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
-    },
-    {
-     "name": "03-CAMPUS",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "402-SALA INTERNET",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "402-SALA INTERNET",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
     }
    ]
   },
@@ -6598,18 +6495,18 @@
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "NREF",
-       "start": "12:00",
-       "end": "13:59"
-      },
-      {
        "day": "Miércoles",
        "dayIdx": 2,
-       "room": "NREF",
-       "start": "12:00",
-       "end": "13:59"
+       "room": "402-SALA INTERNET",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "402-SALA INTERNET",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -6629,14 +6526,14 @@
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "NREF",
+       "room": "P4-05 LAB-DESARR SOF",
        "start": "08:00",
        "end": "09:59"
       },
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "NREF",
+       "room": "P4-05 LAB-DESARR SOF",
        "start": "08:00",
        "end": "09:59"
       }
@@ -6651,28 +6548,6 @@
    "name": "BASE DE DATOS AVANZADAS",
    "status": "ACTIVO",
    "groups": [
-    {
-     "name": "03-SALA TALENTO TECH",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "NREF",
-       "start": "10:00",
-       "end": "11:59"
-      },
-      {
-       "day": "Miércoles",
-       "dayIdx": 2,
-       "room": "NREF",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
     {
      "name": "01-VIRTUAL",
      "teacher": "NDOC",
@@ -6696,19 +6571,41 @@
      "end": "15-12-2026"
     },
     {
-     "name": "02-VIRTUAL",
+     "name": "03-SALA TALENTO TECH",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Martes",
-       "dayIdx": 1,
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "NREF",
+       "start": "10:00",
+       "end": "11:59"
+      },
+      {
+       "day": "Miércoles",
+       "dayIdx": 2,
+       "room": "NREF",
+       "start": "10:00",
+       "end": "11:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "05-VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
        "room": "NREF",
        "start": "12:00",
        "end": "13:59"
       },
       {
-       "day": "Jueves",
-       "dayIdx": 3,
+       "day": "Miércoles",
+       "dayIdx": 2,
        "room": "NREF",
        "start": "12:00",
        "end": "13:59"
@@ -6738,6 +6635,28 @@
      ],
      "start": "03-08-2026",
      "end": "15-12-2026"
+    },
+    {
+     "name": "02-VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "NREF",
+       "start": "12:00",
+       "end": "13:59"
+      },
+      {
+       "day": "Jueves",
+       "dayIdx": 3,
+       "room": "NREF",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
     }
    ]
   },
@@ -6754,21 +6673,6 @@
        "day": "Lunes",
        "dayIdx": 0,
        "room": "SALA VIDEOCONFERENCI",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "49-DEPORTE",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "01-AULA-VIRTUALTECA",
        "start": "12:00",
        "end": "13:59"
       }
@@ -6852,6 +6756,21 @@
      "end": "15-12-2026"
     },
     {
+     "name": "55-FISIOTERAPIA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "29-PRI MATEMATICAS VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -6867,7 +6786,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "50-CERRADO",
+     "name": "59-PRI SOCIOLOGIA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -6876,21 +6795,6 @@
        "room": "01-AULA-VIRTUALTECA",
        "start": "06:00",
        "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "55-FISIOTERAPIA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "01-AULA-VIRTUALTECA",
-       "start": "16:00",
-       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -6927,15 +6831,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "59-PRI SOCIOLOGIA VIRTUAL",
+     "name": "49-PRI DEPORTE VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Lunes",
        "dayIdx": 0,
        "room": "01-AULA-VIRTUALTECA",
-       "start": "06:00",
-       "end": "07:59"
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -6987,6 +6891,36 @@
      "end": "15-12-2026"
     },
     {
+     "name": "11-PRI COMERCIO VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "18:00",
+       "end": "19:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "72-PRI ESPAÑOL VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "NREF",
+       "start": "12:00",
+       "end": "13:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "05-PRI CONTADURIA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7017,21 +6951,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "72-PRI ESPAÑOL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "NREF",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "02-CAMPUS VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7041,6 +6960,21 @@
        "room": "NREF",
        "start": "08:00",
        "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "07-PRI ADMON VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -7077,21 +7011,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "07-PRI ADMON VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "01-AULA-VIRTUALTECA",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "10-PRI COMERCIO VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7122,13 +7041,13 @@
      "end": "15-12-2026"
     },
     {
-     "name": "09-PRI ECONOMIA VIRTUAL",
+     "name": "73-PRI ESPAÑOL VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Martes",
        "dayIdx": 1,
-       "room": "01-AULA-VIRTUALTECA",
+       "room": "NREF",
        "start": "12:00",
        "end": "13:59"
       }
@@ -7137,22 +7056,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "11-PRI COMERCIO VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "01-AULA-VIRTUALTECA",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "56-PRI SISTEMAS VIRTUAL",
+     "name": "09-PRI ECONOMIA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -7176,6 +7080,21 @@
        "room": "NREF",
        "start": "06:00",
        "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "56-PRI SISTEMAS VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -7362,13 +7281,13 @@
      "end": "15-12-2026"
     },
     {
-     "name": "16-PRI AGROINDUS VIRTUAL",
+     "name": "67-PRI NATURALES VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "01-AULA-VIRTUALTECA",
+       "room": "SALA VIDEOCONFERENCI",
        "start": "12:00",
        "end": "13:59"
       }
@@ -7377,7 +7296,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "67-PRI NATURALES VIRTUAL",
+     "name": "66-PRI NATURALES VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -7407,21 +7326,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "60-PR ECONOMIA VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "01-AULA-VIRTUALTECA",
-       "start": "06:00",
-       "end": "07:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "24-PRI AMBIENTAL VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7429,21 +7333,6 @@
        "day": "Jueves",
        "dayIdx": 3,
        "room": "01-AULA-VIRTUALTECA",
-       "start": "12:00",
-       "end": "13:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "66-PRI NATURALES VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Jueves",
-       "dayIdx": 3,
-       "room": "SALA VIDEOCONFERENCI",
        "start": "12:00",
        "end": "13:59"
       }
@@ -7512,15 +7401,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "04-CERRADO",
+     "name": "60-PR ECONOMIA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Jueves",
        "dayIdx": 3,
-       "room": "NREF",
-       "start": "18:00",
-       "end": "19:59"
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "06:00",
+       "end": "07:59"
       }
      ],
      "start": "03-08-2026",
@@ -7542,15 +7431,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "44-PRI DERECHO VIRTUAL",
+     "name": "16-PRI AGROINDUS VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
-       "day": "Viernes",
-       "dayIdx": 4,
+       "day": "Jueves",
+       "dayIdx": 3,
        "room": "01-AULA-VIRTUALTECA",
-       "start": "16:00",
-       "end": "17:59"
+       "start": "12:00",
+       "end": "13:59"
       }
      ],
      "start": "03-08-2026",
@@ -7566,21 +7455,6 @@
        "room": "NREF",
        "start": "18:00",
        "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "31-PRI ARTES VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "NREF",
-       "start": "08:00",
-       "end": "09:59"
       }
      ],
      "start": "03-08-2026",
@@ -7617,6 +7491,21 @@
      "end": "15-12-2026"
     },
     {
+     "name": "40-PRI SOCIOLOGIA VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "18:00",
+       "end": "19:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "39-PRI SOCIOLOGIA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7647,37 +7536,7 @@
      "end": "15-12-2026"
     },
     {
-     "name": "48-DEPORTE",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "SALA VIDEOCONFERENCI",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "47-PRI DERECHO VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "01-AULA-VIRTUALTECA",
-       "start": "16:00",
-       "end": "17:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "65-PRI DERECHO VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -7707,15 +7566,15 @@
      "end": "15-12-2026"
     },
     {
-     "name": "40-PRI SOCIOLOGIA VIRTUAL",
+     "name": "65-PRI DERECHO VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
        "day": "Viernes",
        "dayIdx": 4,
        "room": "01-AULA-VIRTUALTECA",
-       "start": "18:00",
-       "end": "19:59"
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
@@ -7737,6 +7596,36 @@
      "end": "15-12-2026"
     },
     {
+     "name": "31-PRI ARTES VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "NREF",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "48-PRI DEPORTE VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "SALA VIDEOCONFERENCI",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "30-PRI ARTES VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7746,21 +7635,6 @@
        "room": "NREF",
        "start": "10:00",
        "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
-     "name": "05-CAMPUS VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "NREF",
-       "start": "18:00",
-       "end": "19:59"
       }
      ],
      "start": "03-08-2026",
@@ -7782,7 +7656,37 @@
      "end": "15-12-2026"
     },
     {
+     "name": "05-CAMPUS VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "NREF",
+       "start": "18:00",
+       "end": "19:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "02-PRI ADMON VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "01-PRI ADMON VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
       {
@@ -7827,21 +7731,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "01-PRI ADMON VIRTUAL",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "01-AULA-VIRTUALTECA",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "41-PRI PSICOLOGIA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7872,6 +7761,21 @@
      "end": "15-12-2026"
     },
     {
+     "name": "44-PRI DERECHO VIRTUAL",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "01-AULA-VIRTUALTECA",
+       "start": "16:00",
+       "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "19-PRI ELECTRONICA VIRTUAL",
      "teacher": "NDOC",
      "sessions": [
@@ -7893,21 +7797,6 @@
    "name": "ACTIVIDAD DEPORTIVA",
    "status": "ACTIVO",
    "groups": [
-    {
-     "name": "31-FUTBOL DE SALÓN COLISEO UPC",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "CANCHA FUTBOL",
-       "start": "09:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
     {
      "name": "01-BALONCESTO COLISEO UPC",
      "teacher": "NDOC",
@@ -7963,6 +7852,21 @@
        "room": "PARQUE LA VALLENATA",
        "start": "08:00",
        "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "31-FUTBOL DE SALÓN COLISEO UPC",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "CANCHA FUTBOL",
+       "start": "09:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -8044,21 +7948,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "24-VOLEIBOL COLISEO UPC",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "PARQUE LA VALLENATA",
-       "start": "09:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "23-ATLETISMO PARQUE LA VALLEN",
      "teacher": "NDOC",
      "sessions": [
@@ -8068,6 +7957,21 @@
        "room": "PARQUE LA VALLENATA",
        "start": "15:00",
        "end": "17:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "24-VOLEIBOL COLISEO UPC",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "PARQUE LA VALLENATA",
+       "start": "09:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -8239,21 +8143,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "12-FUTBOL CANCHA LA VALLENATA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Viernes",
-       "dayIdx": 4,
-       "room": "CANCHA FUTBOL",
-       "start": "17:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "27-FUTBOL DE SALÓN COLISEO UPC",
      "teacher": "NDOC",
      "sessions": [
@@ -8263,6 +8152,21 @@
        "room": "CANCHA FUTBOL",
        "start": "08:00",
        "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "12-FUTBOL CANCHA LA VALLENATA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Viernes",
+       "dayIdx": 4,
+       "room": "CANCHA FUTBOL",
+       "start": "17:00",
+       "end": "19:59"
       }
      ],
      "start": "03-08-2026",
@@ -8381,21 +8285,6 @@
    "status": "ACTIVO",
    "groups": [
     {
-     "name": "01-DIBUJO",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "11- BELLAS ARTES.",
-       "start": "08:00",
-       "end": "09:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "48-DESARROLLO HUMANO",
      "teacher": "NDOC",
      "sessions": [
@@ -8486,21 +8375,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "34-MUSICA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Lunes",
-       "dayIdx": 0,
-       "room": "10- BELLAS ARTES.",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "31-MUSICA",
      "teacher": "NDOC",
      "sessions": [
@@ -8510,6 +8384,21 @@
        "room": "10- BELLAS ARTES.",
        "start": "14:00",
        "end": "15:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "34-MUSICA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "10- BELLAS ARTES.",
+       "start": "18:00",
+       "end": "19:59"
       }
      ],
      "start": "03-08-2026",
@@ -8531,6 +8420,21 @@
      "end": "15-12-2026"
     },
     {
+     "name": "01-DIBUJO",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Lunes",
+       "dayIdx": 0,
+       "room": "11- BELLAS ARTES.",
+       "start": "08:00",
+       "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
      "name": "15-DIBUJO",
      "teacher": "NDOC",
      "sessions": [
@@ -8546,21 +8450,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "26-DESARROLLO HUMANO",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Martes",
-       "dayIdx": 1,
-       "room": "07- BELLAS ARTES.",
-       "start": "18:00",
-       "end": "19:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "36-MUSICA",
      "teacher": "NDOC",
      "sessions": [
@@ -8570,6 +8459,21 @@
        "room": "19- BELLAS ARTES.",
        "start": "08:00",
        "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "26-DESARROLLO HUMANO",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Martes",
+       "dayIdx": 1,
+       "room": "07- BELLAS ARTES.",
+       "start": "18:00",
+       "end": "19:59"
       }
      ],
      "start": "03-08-2026",
@@ -8921,21 +8825,6 @@
      "end": "15-12-2026"
     },
     {
-     "name": "21-PINTURA",
-     "teacher": "NDOC",
-     "sessions": [
-      {
-       "day": "Sábado",
-       "dayIdx": 5,
-       "room": "14- LAB. DE CERAMICA",
-       "start": "10:00",
-       "end": "11:59"
-      }
-     ],
-     "start": "03-08-2026",
-     "end": "15-12-2026"
-    },
-    {
      "name": "28-DESARROLLO HUMANO",
      "teacher": "NDOC",
      "sessions": [
@@ -8945,6 +8834,21 @@
        "room": "08- BELLAS ARTES.",
        "start": "06:00",
        "end": "07:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "21-PINTURA",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "14- LAB. DE CERAMICA",
+       "start": "10:00",
+       "end": "11:59"
       }
      ],
      "start": "03-08-2026",
@@ -9027,6 +8931,21 @@
        "room": "304-BLQ B-CAMPUS",
        "start": "08:00",
        "end": "09:59"
+      }
+     ],
+     "start": "03-08-2026",
+     "end": "15-12-2026"
+    },
+    {
+     "name": "06-CAMPUS",
+     "teacher": "NDOC",
+     "sessions": [
+      {
+       "day": "Sábado",
+       "dayIdx": 5,
+       "room": "NREF",
+       "start": "16:00",
+       "end": "17:59"
       }
      ],
      "start": "03-08-2026",
